@@ -50,28 +50,109 @@ table {
 }
 
 /* End Meyer Reset */
-
-body {
-    font-family: 'Poppins', sans-serif;
+* {
+	box-sizing: border-box;
 }
 
-/* HEADER */
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: rgb(8, 54, 73);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+/* HEADER ***************************************************/
 
 header {
     height: fit-content;
-    margin: 1rem;
+    margin: 2rem;
 }
 
-.top-header {
+/* Top Header */
+
+.logo-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .top-logo {
-    height: 150px;
+	height: 150px;
+}
+
+.social-media-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color:white;
 }
 
 .icon {
-    height: 30px;
+	height: 30px;
+}
+
+/* Nav Bar */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	background-color: lightgray;
+}
+
+nav ul li a {
+	padding: 2rem 1rem 2rem 1rem;
+	text-align: center;
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+}
+
+nav ul li a p {
+	margin-left: 10px;
+}
+
+nav ul li:hover {
+	background-color: darkgray;
+}
+
+.pet-store {
+	color: red;
+}
+
+/* Footer ******************************************************/
+
+footer {
+	margin-top: auto;
+	background-color: rgb(126, 126, 126);
+}
+
+.footer-info-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+div h4 {
+	text-decoration: underline;
+	font-size: larger;
+}
+
+@media only screen and (max-width: 675px) {
+	.logo-header {
+		flex-direction: column;
+	}
+	.top-logo {
+		height: 125px;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	nav ul li {
+
+	}
 }
