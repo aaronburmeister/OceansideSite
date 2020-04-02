@@ -106,18 +106,19 @@ nav ul li {
 }
 
 nav ul li a {
-	padding: 2rem 1rem 2rem 1rem;
+	padding: 2rem;
 	text-align: center;
 	display: flex;
 	flex-grow: 1;
 	align-items: center;
+	text-decoration: none;
 }
 
 nav ul li a p {
 	margin-left: 10px;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
 	background-color: darkgray;
 }
 
