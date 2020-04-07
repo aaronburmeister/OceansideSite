@@ -56,6 +56,7 @@ table {
 
 body {
 	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
 	background-color: rgb(8, 54, 73);
 	min-height: 100vh;
 	display: flex;
@@ -105,6 +106,10 @@ nav ul li {
 	background-color: lightgray;
 }
 
+nav ul li.bookend {
+	flex-grow: 3;
+}
+
 nav ul li a {
 	padding: 2rem;
 	text-align: center;
@@ -112,36 +117,69 @@ nav ul li a {
 	flex-grow: 1;
 	align-items: center;
 	text-decoration: none;
+	color: inherit;
 }
 
 nav ul li a p {
-	margin-left: 10px;
+	margin-left: 0.83rem;
 }
 
 nav ul li a:hover {
 	background-color: darkgray;
 }
 
-.pet-store {
-	color: red;
+a.not-clickable {
+	cursor: initial;
+}
+
+.sub-menu {
+	flex-direction: column;
+	position: relative;
+	display: none;
+}
+
+li:hover .sub-menu {
+	display: block;
+	position: absolute;
+}
+
+.sub-menu li a {
+	background-color: lightgray;
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Footer ******************************************************/
 
 footer {
 	margin-top: auto;
-	background-color: rgb(126, 126, 126);
+	background-color: rgb(82, 82, 82);
 }
 
 .footer-info-wrapper {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-contact, .footer-hours {
+	color: rgb(196, 194, 194)
 }
 
 div h4 {
 	text-decoration: underline;
 	font-size: larger;
 }
+
+.attributions {
+	font-size: 0.7rem;
+}
+
+/* MEDIA QUERIES **************************************************/
 
 @media only screen and (max-width: 675px) {
 	.logo-header {
@@ -152,8 +190,5 @@ div h4 {
 	}
 	nav ul {
 		flex-direction: column;
-	}
-	nav ul li {
-
 	}
 }
