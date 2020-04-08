@@ -2,9 +2,9 @@
     <div class="logo-header">
         <img class="top-logo" src="/assets/OAHwords.png" alt="oceanside-symbol"/>
         <div class="social-media-links">
-            <p>Like us on Facebook! <img class="icon" src="/assets/facebook.svg" alt="facebook" /></p>
-            <p>Follow us on Instagram! <img class="icon" src="/assets/instagram-sketched.svg" alt="instagram" /></p>
-            <a href="https://www.carecredit.com/apply?sitecode=bb3bupc06182018" target="_blank" rel="noreferrer noopener">
+            <div class="social-link"><p>Like us on Facebook!</p><img class="social-icon" src="/assets/facebook.svg" alt="facebook" /></div>
+            <div class="social-link"><p>Follow us on Instagram!</p><img class="social-icon" src="/assets/instagram-sketched.svg" alt="instagram" /></div>
+            <a class="social-link" href="https://www.carecredit.com/apply?sitecode=bb3bupc06182018" target="_blank" rel="noreferrer noopener">
                 <img src="//www.carecredit.com/adtoolkit/assets/pages/library/buttons/200x60/CareCredit_Icon_var2_g_v2.png" alt="CareCredit">
             </a>
         </div>
@@ -12,7 +12,7 @@
     <nav>
         <ul>
             <li class="bookend"></li>
-            <li><a href="/"><img src="/assets/home.svg" class="icon" alt="home"><p>Home</p></a></li>
+            <li><LinkTo @route="home"><img src="/assets/home.svg" class="icon" alt="home"><p>Home</p></LinkTo></li>
             <li>
                 <a href="#" class="not-clickable">
                     <img src="/assets/calendar.svg" class="icon" alt="calendar">
@@ -34,7 +34,7 @@
                     <li><a href="/">Online Resources</a></li>
                 </ul>
             </li>
-            <li><a href="/" class="pet-store"><img src="/assets/cart.svg" class="icon" alt="store"><p>Pet Supply Store</p></a></li>
+            <li><a href="/" class="pet-store" target="_blank" rel="noopener noreferrer"><img src="/assets/cart.svg" class="icon" alt="store"><p>Pet Supply Store</p></a></li>
             <li>
                 <a href="#" class="not-clickable">
                     <img src="/assets/info.svg" class="icon" alt="information">
