@@ -317,8 +317,6 @@ input.radio-input {
 /* Veterinary Services *****************************************/
 
 #services {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 	margin-top: 1rem;
 }
@@ -335,6 +333,28 @@ input.radio-input {
 	font-size: 32px;
 	margin-bottom: 1rem;
 }
+
+/* Emergency ***************************************************/
+#emergency {
+	align-items: center;
+}
+
+
+div.buttons {
+	display: flex;
+}
+
+.buttons .button {
+	width: 250px;
+	margin: 1rem;
+}
+
+/* Euthanasia **************************************************/
+
+#euthanasia {
+
+}
+
 
 /* Footer ******************************************************/
 

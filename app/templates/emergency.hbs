@@ -1,0 +1,20 @@
+<main id="emergency">
+    <div class="service">
+        <h3>During Working Hours</h3>
+        <p>During normal work hours, if you have a pet emergency, we will do our best to work you into our schedule if at all possible. Below are our hours, our phone number, and our address.</p>
+        <Hours />
+        <div class="buttons">
+            <CallButton @number="2076642944" @structuredNumber="(207) 664-2944"/>
+            <AddressButton @mapLink="https://www.google.com/maps/place/Oceanside+Animal+Hospital/@44.4939543,-68.3835387,17z/data=!3m1!4b1!4m5!3m4!1s0x4caeedd018641517:0xd7037b932177b98d!8m2!3d44.4939543!4d-68.3813447" @address="47 Four Paws Lane, Trenton, ME 04605" />
+        </div>
+
+        <h3>After Hours</h3>
+        <p>During times the clinic is closed, we refer our clients to the <a href="https://emevc.com/">Eastern Maine Emergency Veterinary Clinic</a> in Brewer.</p>
+        <div class="buttons">
+            <CallButton @number="2079896267" @structuredNumber="(207) 989-6267"/>
+            <AddressButton @mapLink="https://www.google.com/maps/place/Eastern+Maine+Emergency+Veterinary/@44.7806772,-68.7556087,17z/data=!4m13!1m7!3m6!1s0x4cae4c8e28a1cf2d:0x5ba89f1836ba0859!2s15+Dirigo+Dr,+Brewer,+ME+04412!3b1!8m2!3d44.7806734!4d-68.7534147!3m4!1s0x4cae4cf3cc645e37:0x8bf4ff20f10c77d4!8m2!3d44.7806387!4d-68.7533937" @address="15 Dirigo Drive, Brewer, ME 04412"/>
+        </div>
+    </div>
+</main>
+
+{{outlet}}

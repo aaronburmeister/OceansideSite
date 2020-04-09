@@ -8,10 +8,10 @@
                 <img src="/assets/cart.svg" alt="store">
                 <p>Visit our Pet Supply Store</p>
             </div>
-            <div class="tile emergency">
+            <LinkTo class="tile emergency" @route="emergency">
                 <img src="/assets/emergency.svg" alt="emergency">
                 <p>Emergency Information</p>
-            </div>
+            </LinkTo>
             <div class="tile">
                 <img src="/assets/video-camera.svg" alt="videos">
                 <p>Informational Videos</p>
@@ -31,57 +31,9 @@
         </section>
         <aside class="home">
             <div class="title">Contact Information</div>
-            <div>
-                <h4>Hours:</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>8am-5pm</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>10am-6:30pm</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>8am-5pm</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>10am-6:30pm</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>8am-5pm</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="contact">
-                <a class="button" href="https://www.google.com/maps/place/Oceanside+Animal+Hospital/@44.4939543,-68.3835387,17z/data=!3m1!4b1!4m5!3m4!1s0x4caeedd018641517:0xd7037b932177b98d!8m2!3d44.4939543!4d-68.3813447" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/pin.svg" class="icon" alt="address">47 Four Paws Lane <br> Trenton, ME 04605
-                </a>
-            </div>
-            <div class="contact">
-                <a class="button" href="tel:2076642944">
-                    <img class="icon" src="/assets/phone.svg" alt="phone">(207) 664-2944
-                </a>
-            </div>
+            <Hours />
+            <AddressButton @mapLink="https://www.google.com/maps/place/Oceanside+Animal+Hospital/@44.4939543,-68.3835387,17z/data=!3m1!4b1!4m5!3m4!1s0x4caeedd018641517:0xd7037b932177b98d!8m2!3d44.4939543!4d-68.3813447" @address="47 Four Paws Lane, Trenton, ME 04605" />
+            <CallButton @number="2076642944" @structuredNumber="(207) 664-2944"/>
             <div class="contact">
                 <a class="button" href="mailto:oceansideanimalhospital@gmail.com">
                     <img src="/assets/envelope.svg" class="icon" alt="email">oceansideanimalhospital<br>@gmail.com

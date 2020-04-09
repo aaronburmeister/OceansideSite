@@ -11,4 +11,5 @@ Router.map(function() {
   this.route('new-client');
   this.route('established-client');
   this.route('veterinary-services');
+  this.route('emergency');
 });
