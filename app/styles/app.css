@@ -244,7 +244,7 @@ aside div {
 	flex-wrap: wrap;
 }
 
-aside div > a.button {
+a.button {
 	background-color: green;
 	display: flex;
 	justify-content: center;
@@ -261,6 +261,47 @@ aside div h4 {
 
 aside div p {
 	margin: 0.4rem;
+}
+
+/* New Client **************************************************/
+
+.form {
+	display: flex;
+	align-items: center;
+	margin: 0.5rem;
+}
+
+.form h3 {
+	color:white;
+}
+
+.form .button {
+	margin: 0.5rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	border: 2px rgb(0, 0, 0);
+	margin: 1rem;
+	background-color: whitesmoke;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+#new-client-form-text {
+	color: darkslategray;
+}
+
+select, input {
+	border-radius: 3px;
+	margin: 0.5rem;
+	padding:0.2rem;
+}
+
+input.radio-input {
+	margin: 0rem 0rem 0rem 1rem;
 }
 
 /* Footer ******************************************************/

@@ -1,0 +1,86 @@
+<main class="form">
+    <h3>Call for an appointment now!</h3>
+    <div class="contact">
+        <a class="button" href="tel:2076642944">
+            <img class="icon" src="/assets/phone.svg" alt="phone">(207) 664-2944
+        </a>
+    </div>
+    <h3>OR</h3>
+    <h3>Register using the form below:</h3>
+    <form action="mailto:f34r91@gmail.com">
+        <h3 id="new-client-form-text">New Client Registration Form</h3>
+
+        <label for="owner"></label>
+        <input id="owner" type="text" name="owner" placeholder="Owner's Name*" required>
+
+        <label for="address"></label>
+        <input id="address" type="text" name="address" placeholder="Street, City, State, ZIP*" required>
+
+        <label for="owner-spouse"></label>
+        <input id="owner-spouse" type="text" name="owner-spouse" placeholder="Spouse/Partner's Name">
+
+        <label for="email"></label>
+        <input id="email" type="text" name="email" placeholder="E-mail Address*" required>
+
+        <label for="primary-phone"></label>
+        <input id="primary-phone" type="text" name="primary-phone" placeholder="Primary Phone*" required>
+
+        <label for="secondary-phone"></label>
+        <input id="secondary-phone" type="text" name="secondary-phone" placeholder="Secondary Phone">
+
+        <label for="pet-name"></label>
+        <input id="pet-name" type="text" name="pet-name" placeholder="Pet's Name*" required>
+
+        <label for="pet-type"></label>
+        <select id="pet-type" name="pet-type" required>
+            <option disabled selected>Select a Type of Pet*</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="pet-sex"></label>
+        <select id="pet-sex" name="pet-sex" required>
+            <option disabled selected>Select a sex*</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="pet-breed"></label>
+        <input id="pet-breed" type="text" name="pet-breed" placeholder="Pet's Breed*" required>
+
+        <label for="pet-color"></label>
+        <input id="pet-color" type="text" name="pet-color" placeholder="Pet's Color*" required>
+
+        <label for="pet-age"></label>
+        <input id="pet-age" type="text" name="pet-age" placeholder="Pet's Age or Date of Birth*" required>
+
+        <h4>How did you hear about us?</h4>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input id="reference" class="radio-input" type="radio" name="reference" value="Current Client">
+                <label for="reference">Current Client</label>
+            </div>
+            <div class="radio-option">
+                <input id="reference" class="radio-input" type="radio" name="reference" value="Friend/Family">
+                <label for="reference">Friend/Family</label>
+            </div>
+            <div class="radio-option">
+                <input id="reference" class="radio-input" type="radio" name="reference" value="Advertising">
+                <label for="reference">Advertising</label>
+            </div>
+            <div class="radio-option">
+                <input id="reference" class="radio-input" type="radio" name="reference" value="Saw the Sign">
+                <label for="reference">Saw the Sign</label>
+            </div>
+            <div class="radio-option">
+                <input id="reference" class="radio-input" type="radio" name="reference" value="SPCA or other shelter">
+                <label for="reference">SPCA or other shelter</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</main>
+
+{{outlet}}
