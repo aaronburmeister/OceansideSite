@@ -199,13 +199,15 @@ section.home {
 .tile {
 	width: 250px;
 	height: 250px;
-	background-color: beige;
+	background-color: whitesmoke;
 	box-shadow: 1px 1px 5px darkslategray;
 	margin: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
+	color: inherit;
 }
 
 .tile img {
@@ -223,7 +225,7 @@ section.home {
 }
 
 aside.home {
-	background-color: beige;
+	background-color: whitesmoke;
 	margin: 2rem;
 	width: 300px;
 	display: flex;
@@ -337,6 +339,13 @@ input.radio-input {
 /* Emergency ***************************************************/
 #emergency {
 	align-items: center;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+#emergency h3 {
+	font-size: 32px;
+	color: white;
+	margin: 1rem;
 }
 
 
