@@ -12,4 +12,5 @@ Router.map(function() {
   this.route('established-client');
   this.route('veterinary-services');
   this.route('emergency');
+  this.route('euthanasia');
 });

@@ -361,8 +361,49 @@ div.buttons {
 /* Euthanasia **************************************************/
 
 #euthanasia {
-
+	align-items: center;
+	margin: 1rem 0rem 1rem 0rem;
 }
+
+#euthanasia h3 {
+	color: white;
+	font-size: 32px;
+}
+
+#euthanasia ol {
+	list-style: decimal;
+	margin: 1.5rem;
+}
+
+#euthanasia > .advice {
+	max-width: 1200px;
+	display: flex;
+}
+
+.advice > .advice {
+	max-width: 400px;
+}
+
+.advice > byline, p, h4{
+	margin: 0.5rem;
+}
+
+strong {
+	font-weight: 600;
+	font-size: 110%;
+}
+
+.source {
+	font-style: italic;
+	font-size: 75%;
+}
+
+.hotline {
+	width: 300px;
+}
+
+/* Online Resources ***********************************************/
+
 
 
 /* Footer ******************************************************/
