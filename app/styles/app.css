@@ -402,7 +402,7 @@ strong {
 	width: 300px;
 }
 
-/* Online Resources ***********************************************/
+/* Our Staff ***********************************************/
 
 #staff {
 	align-items: center;
@@ -416,6 +416,18 @@ strong {
 
 .about-us {
 	display: flex;
+}
+
+/*  Clinic Tour *************************************************/
+
+#tour {
+	align-items: center;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+.room img {
+	height: auto;
+	max-width: 100%;
 }
 
 /* Footer ******************************************************/

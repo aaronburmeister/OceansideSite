@@ -15,4 +15,5 @@ Router.map(function() {
   this.route('euthanasia');
   this.route('online-resources');
   this.route('our-staff');
+  this.route('tour');
 });
