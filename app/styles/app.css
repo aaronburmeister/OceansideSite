@@ -425,9 +425,31 @@ strong {
 	margin: 1rem 0rem 1rem 0rem;
 }
 
+#tour > h3 {
+	font-size: 32px;
+	color: white;
+}
+
 .room img {
 	height: auto;
 	max-width: 100%;
+}
+
+/* Directions **************************************************/
+
+#directions {
+	align-items: center;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+#directions > h3 {
+	font-size: 32px;
+	color: white;
+}
+
+.maps {
+	display: flex;
+	justify-content: center;
 }
 
 /* Footer ******************************************************/
