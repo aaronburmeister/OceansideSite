@@ -404,7 +404,19 @@ strong {
 
 /* Online Resources ***********************************************/
 
+#staff {
+	align-items: center;
+	margin: 1rem 0rem 1rem 0rem;
+}
 
+#staff > h3 {
+	font-size: 32px;
+	color: white;
+}
+
+.about-us {
+	display: flex;
+}
 
 /* Footer ******************************************************/
 
@@ -456,6 +468,9 @@ div h4 {
 	}
 	aside.home {
 		margin: 0.5rem;
+	}
+	.about-us {
+		flex-direction: column;
 	}
 	footer {
 		display: none;

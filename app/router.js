@@ -14,4 +14,5 @@ Router.map(function() {
   this.route('emergency');
   this.route('euthanasia');
   this.route('online-resources');
+  this.route('our-staff');
 });
