@@ -13,4 +13,5 @@ Router.map(function() {
   this.route('veterinary-services');
   this.route('emergency');
   this.route('euthanasia');
+  this.route('online-resources');
 });
