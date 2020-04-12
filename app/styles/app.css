@@ -457,6 +457,12 @@ strong {
 .maps {
 	display: flex;
 	justify-content: center;
+	height: 300px;
+}
+
+iframe {
+	width: 100%;
+	height: auto;
 }
 
 /* Footer ******************************************************/
