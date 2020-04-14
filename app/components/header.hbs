@@ -10,47 +10,55 @@
         </div>
     </div>
     <nav>
-        <div id="hamburger">
+        <button type="button" id="hamburger" {{on 'click' this.expandMenu}}>
             <div></div>
-        </div>
+        </button>
+        {{#if this.expand}}
         <ul>
             <li class="bookend"></li>
             <li><LinkTo @route="home"><img src="/assets/home.svg" class="icon" alt="home"><p>Home</p></LinkTo></li>
             <li>
-                <a href="#" class="not-clickable">
+                <button type="button" {{on 'click' this.expandAppointments}} class="not-clickable">
                     <img src="/assets/calendar.svg" class="icon" alt="calendar">
                     <p>Request an Appointment</p>
-                </a>
+                </button>
+                {{#if this.expand_appointments}}
                 <ul class="appointment sub-menu">
                     <li><LinkTo @route="new-client">New Clients</LinkTo></li>
                     <li><LinkTo @route="established-client">Established Clients</LinkTo></li>
                 </ul>
+                {{/if}}
             </li>
             <li>
-                <a href="#" class="not-clickable">
+                <button type="button" {{on 'click' this.expandServices}} class="not-clickable">
                     <img src="/assets/cross.svg" class="icon" alt="medical-services">
                     <p>Services</p>
-                </a>
+                </button>
+                {{#if this.expand_services}}
                 <ul class="services sub-menu">
                     <li><LinkTo @route="veterinary-services">Veterinary Services</LinkTo></li>
                     <li><LinkTo @route="euthanasia">Loss of a Pet</LinkTo></li>
                     <li><LinkTo @route="online-resources">Online Resources</LinkTo></li>
                 </ul>
+                {{/if}}
             </li>
             <li><a href="https://oceansideanimalhospital4.securevetsource.com/site/view/site/view/HomeDelivery.pml?retUrl=http://www.oceansidepetvet.com/&cmsTitle=Oceanside+Animal+Hospital" class="pet-store" target="_blank" rel="noopener noreferrer"><img src="/assets/cart.svg" class="icon" alt="store"><p>Pet Supply Store</p></a></li>
             <li>
-                <a href="#" class="not-clickable">
+                <button type="button" {{on 'click' this.expandAbout}} class="not-clickable">
                     <img src="/assets/info.svg" class="icon" alt="information">
                     <p>About Us</p>
-                </a>
+                </button>
+                {{#if this.expand_about}}
                 <ul class="about sub-menu">
                     <li><LinkTo @route="our-staff">Our Staff</LinkTo></li>
                     <li><LinkTo @route="tour">Clinic Tour</LinkTo></li>
                     <li><LinkTo @route="directions">Directions</LinkTo></li>
                 </ul>
+                {{/if}}
             </li>
             <li class="bookend"></li>
         </ul>
+        {{/if}}
     </nav>
 </header>
 

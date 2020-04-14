@@ -116,7 +116,7 @@ nav > ul > li {
 	flex-direction: column;
 }
 
-nav > ul > li a {
+nav > ul > li > a, nav > ul > li > button {
 	padding: 2rem;
 	text-align: center;
 	align-items: center;
@@ -126,12 +126,22 @@ nav > ul > li a {
 	transition: 1s;
 }
 
+nav > ul > li > button, nav > ul > li > button:focus {
+	-webkit-appearance: none;
+	cursor: pointer;
+	font: inherit;
+	border: none;
+	background-color: inherit;
+	outline: inherit;
+	width: 100%;
+}
+
 nav > ul > li.bookend {
 	flex-grow: 3;
 }
 
 .sub-menu {
-	height: 0px;
+	height: fit-content;
 	opacity: 100%;
 	list-style: none;
 	position: absolute;
@@ -139,29 +149,65 @@ nav > ul > li.bookend {
 }
 
 .sub-menu li {
+	display: none;
+}
+
+li:focus-within > .sub-menu li {
+	display: block;
+}
+
+li:focus-within > .sub-menu li a {
+	text-decoration: none;
 	background-color: lightgray;
-}
-
-.sub-menu li a {
-	display: flex;
-	opacity: 0%;
-	padding: 0rem 2rem 0rem 2rem;
-	line-height: 0rem;
-	transition: 1s;
-}
-
-li:hover > .sub-menu {
-	opacity: 100%;
-	position: relative;
-}
-
-li:hover > .sub-menu li a{
-	opacity: 100%;
+	color: inherit;
 	padding: 2rem;
-	line-height: 1rem;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	animation: uncollapse 1s alternate;
 }
 
-nav li a:hover {
+li:focus-within > .sub-menu li a:hover {
+	background-color: rgb(153, 153, 153);
+}
+
+#hamburger {
+	display: none;
+}
+
+@keyframes uncollapse {
+	0% {
+		display: flex;
+		opacity: 0%;
+		height: 0px;
+		line-height: 0rem;
+		padding: 0rem 2rem 0rem 2rem;
+	}
+	100% {
+		opacity: 100%;
+		height: fit-content;
+		line-height: 1rem;
+	}
+}
+
+@media only screen and (max-width: 675px) {
+	#hamburger {
+		display: block;
+	}
+	.sub-menu {
+		position: relative;
+	}
+	.sub-menu li a {
+		position: relative;
+		height: fit-content;
+	}
+}
+
+nav li a:hover, nav li button:hover {
+	background-color: rgb(153, 153, 153);
+}
+
+.not-clickable:focus {
 	background-color: rgb(153, 153, 153);
 }
 
@@ -233,7 +279,7 @@ section.home {
 
 aside.home {
 	background-color: whitesmoke;
-	margin: 2rem;
+	margin: 3rem;
 	width: 300px;
 	display: flex;
 	flex-direction: column;
@@ -505,7 +551,7 @@ div h4 {
 		align-items: center;
 	}
 	.top-logo {
-		height: 125px;
+		width: 100%;
 	}
 	#hamburger {
 		background-color: gray;
@@ -536,34 +582,8 @@ div h4 {
 	#hamburger div:after {
 		top: 10px;
 	}
-	#hamburger:hover + ul > li > a, #hamburger:active + ul > li > a {
-		display: flex;
-		height: fit-content;
-		line-height:1rem;
-		opacity: 100%;
-		padding: 2rem;
-	}
-	#hamburger:hover + ul > li a .icon, #hamburger:active + ul > li a .icon{
-		height: 30px;
-		width: 30px;
-	}
-	ul > li a .icon, ul > li a .icon{
-		height: 0px;
-		width: 0px;
-	}
 	nav > ul {
 		flex-direction: column;
-	}
-	nav > ul > li a {
-		display: flex;
-		opacity: 0%;
-		padding: 0rem 2rem 0rem 2rem;
-		line-height: 0rem;
-		height: 0px;
-		transition: 0.5s;
-	}
-	li:hover .sub-menu, li:active .submenu {
-		height: fit-content;
 	}
 	.large-image {
 		display: none;
