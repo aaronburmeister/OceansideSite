@@ -1,0 +1,17 @@
+<main id="appointment">
+    <h3>Schedule An Appointment</h3>
+    <div class="service appointment">
+        <h4>I am...</h4>
+        <div class="appointment-buttons">
+            <LinkTo @route="new-client" class="appointment-button">
+                A New Client
+            </LinkTo>
+            <p>OR</p>
+            <LinkTo @route="established-client" class="appointment-button">
+                An Established Client
+            </LinkTo>
+        </div>
+    </div>
+</main>
+
+{{outlet}}

@@ -1,7 +1,14 @@
 <main id="services">
-    <div class="service">
-        <h3>Call For An Appointment:</h3>
-        <CallButton @number="2076642944" @structuredNumber="(207) 664-2944" />
+    <h3>Our Services</h3>
+    <LinkTo @route="emergency" class="tile emergency">
+        <img src="assets/emergency.svg" alt="emergency">
+        <p>Emergency Services</p>
+    </LinkTo>
+    <div class="service container">
+        <div>
+            <h3>Call For An Appointment:</h3>
+            <CallButton @number="2076642944" @structuredNumber="(207) 664-2944" />
+        </div>
     </div>
     <div class="service">
         <h3>Routine Appointments</h3>

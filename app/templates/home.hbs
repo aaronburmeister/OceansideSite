@@ -1,4 +1,4 @@
-<main>
+<main id="home-main">
     <div class="large-image">
         <img src="/assets/Big-Kitten-Puppy.jpg" alt="main">
     </div>
@@ -16,13 +16,13 @@
                 <img src="/assets/video-camera.svg" alt="videos">
                 <p>Informational Videos</p>
             </LinkTo>
-            <div class="tile">
+            <LinkTo @route="schedule-appointment" class="tile">
                 <img src="/assets/calendar.svg" alt="calendar">
-                <p>Contact us to schedule an Appointment</p>
-            </div>
+                <p>Schedule an Appointment</p>
+            </LinkTo>
             <LinkTo class="tile" @route="veterinary-services">
                 <img src="/assets/pawprints.svg" alt="services">
-                <p>See what services we offer</p>
+                <p>Our Services</p>
             </LinkTo>
             <a href="https://www.spcahancockcounty.org/" class="tile">
                 <img src="/assets/animal-house.svg" alt="adopt">

@@ -123,7 +123,6 @@ nav > ul > li > a, nav > ul > li > button {
 	display: flex;
 	text-decoration: none;
 	color: inherit;
-	transition: 1s;
 }
 
 nav > ul > li > button, nav > ul > li > button:focus {
@@ -222,6 +221,13 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+#home-main {
+	align-items: initial;
+	margin: 0rem;
 }
 
 .large-image {
@@ -279,7 +285,7 @@ section.home {
 
 aside.home {
 	background-color: whitesmoke;
-	margin: 3rem;
+	margin: 3rem 1rem 3rem 1rem;
 	width: 300px;
 	display: flex;
 	flex-direction: column;
@@ -318,6 +324,60 @@ aside div p {
 	margin: 0.4rem;
 }
 
+/* Hours ************************************/
+
+.hours {
+	display: flex;
+	flex-direction: column;
+}
+
+.hours h4 {
+	margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+td {
+	padding: 0.5rem;
+}
+
+.grey {
+	background-color: lightblue;
+}
+
+td {
+	text-align: left;
+}
+
+/* Schedule Appointment ****************************************/
+#appointment h3 {
+	color: white;
+	font-size: 28px;
+}
+
+.service.appointment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service.appointment h4 {
+	text-decoration: none;
+}
+
+.appointment-buttons {
+	display: flex;
+	align-items: center;
+}
+
+.appointment-button {
+	font-size: 18px;
+	text-decoration: none;
+	color: inherit;
+	padding: 1rem;
+	margin: 1rem;
+	background-color: rgb(160,186,217);
+	box-shadow: 0px 0px 1px black;
+}
+
 /* New Client **************************************************/
 
 .form {
@@ -326,8 +386,14 @@ aside div p {
 	margin: 0.5rem;
 }
 
+.form h2 {
+	color: White;
+	font-size: 32px;
+}
+
 .form h3 {
 	color:white;
+	font-size: 24px;
 }
 
 .form .button {
@@ -371,9 +437,13 @@ input.radio-input {
 
 /* Veterinary Services *****************************************/
 
-#services {
-	align-items: center;
-	margin-top: 1rem;
+.container {
+	display: flex;
+}
+
+#services > h3 {
+	font-size: 32px;
+	color: white;
 }
 
 .service {
@@ -390,10 +460,6 @@ input.radio-input {
 }
 
 /* Emergency ***************************************************/
-#emergency {
-	align-items: center;
-	margin: 1rem 0rem 1rem 0rem;
-}
 
 #emergency h3 {
 	font-size: 32px;
@@ -412,11 +478,6 @@ div.buttons {
 }
 
 /* Euthanasia **************************************************/
-
-#euthanasia {
-	align-items: center;
-	margin: 1rem 0rem 1rem 0rem;
-}
 
 #euthanasia h3 {
 	color: white;
@@ -455,12 +516,25 @@ strong {
 	width: 300px;
 }
 
-/* Our Staff ***********************************************/
+/* Online Resources ****************************************/
 
-#staff {
-	align-items: center;
-	margin: 1rem 0rem 1rem 0rem;
+#online-resources > h3 {
+	color: white;
+	font-size: 32px;
 }
+
+#online-resources .service {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: fit-content;
+}
+
+#online-resouces .service iframe {
+	width: 100%;
+}
+
+/* Our Staff ***********************************************/
 
 #staff > h3 {
 	font-size: 32px;
@@ -473,11 +547,6 @@ strong {
 
 /*  Clinic Tour *************************************************/
 
-#tour {
-	align-items: center;
-	margin: 1rem 0rem 1rem 0rem;
-}
-
 #tour > h3 {
 	font-size: 32px;
 	color: white;
@@ -489,11 +558,6 @@ strong {
 }
 
 /* Directions **************************************************/
-
-#directions {
-	align-items: center;
-	margin: 1rem 0rem 1rem 0rem;
-}
 
 #directions > h3 {
 	font-size: 32px;
@@ -508,7 +572,6 @@ strong {
 
 iframe {
 	width: 100%;
-	height: auto;
 }
 
 /* Footer ******************************************************/
@@ -516,24 +579,39 @@ iframe {
 footer {
 	margin-top: auto;
 	background-color: rgb(82, 82, 82);
+	color: rgb(150, 150, 150)
 }
 
 .footer-info-wrapper {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
-.footer-contact, .footer-hours {
-	color: rgb(196, 194, 194)
+.footer-hours table td {
+	padding: 0rem;
+}
+
+.footer-hours, .footer-contact {
+	width: 30%;
+}
+
+.footer-links {
+	width: 10%;
+}
+
+.footer-hours, .footer-contact {
+	font-size: 12px;
 }
 
 div h4 {
 	text-decoration: underline;
 	font-size: larger;
+	margin: 0.5rem 0.5rem 0.1rem 0.5rem;
 }
 
 .attributions {
+	width: 20%;
 	font-size: 0.7rem;
 }
 
@@ -548,6 +626,7 @@ div h4 {
 		flex-direction: column;
 	}
 	.social-media-links {
+		display: none;
 		align-items: center;
 	}
 	.top-logo {
@@ -557,10 +636,8 @@ div h4 {
 		background-color: gray;
 		height: 60px;
 		width: 60px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		padding: 1rem;
+		float: right;
 	}
 	#hamburger div {
 		width: 100%;
@@ -582,11 +659,24 @@ div h4 {
 	#hamburger div:after {
 		top: 10px;
 	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
 	nav > ul {
 		flex-direction: column;
+		width: 100%;
+	}
+	nav > ul > li > a, nav > ul > li > button {
+		animation: uncollapse 1s;
 	}
 	.large-image {
 		display: none;
+	}
+	main {
+		text-align: center;
 	}
 	.main-info {
 		flex-direction: column;
@@ -595,13 +685,45 @@ div h4 {
 	.tile {
 		margin: 0.5rem;
 	}
+	.tile {
+		height: 110px;
+		width: 110px;
+	}
+	.tile img {
+		height: 50px;
+		width: 50px;
+		margin-bottom: 0.1rem;
+	}
+	.tile p {
+		margin: 0rem 0.5rem 0rem 0.5rem;
+		text-align: center;
+	}
 	aside.home {
 		margin: 0.5rem;
+	}
+	.appointment-buttons {
+		flex-direction: column;
+	}
+	form {
+		width: 100%;
+	}
+	#time-and-reason {
+		width: 100%;
+	}
+	#online-resources .service {
+		width: 100%;
+	}
+	div.buttons {
+		flex-direction: column;
 	}
 	.about-us {
 		flex-direction: column;
 	}
-	footer {
-		display: none;
+	footer .footer-info-wrapper {
+		flex-direction: column;
+	}
+	footer .footer-info-wrapper div {
+		margin: 1rem 0rem 1rem 0rem;
+		width: 80%;
 	}
 }
