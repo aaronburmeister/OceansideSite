@@ -67,7 +67,9 @@ body {
 /* HEADER ***************************************************/
 
 header {
-    height: fit-content;
+	height: fit-content;
+	background-color: #162631;
+	background-image: linear-gradient(#162631, #083649);
 }
 
 /* Top Header */
@@ -281,7 +283,7 @@ section.home {
 }
 
 .emergency {
-	box-shadow: 0px 0px 10px rgb(1, 255, 1);
+	box-shadow: 0px 0px 8px rgb(103, 239, 148);
 }
 
 aside.home {
@@ -316,6 +318,7 @@ a.button {
 	text-decoration: none;
 	color: inherit;
 	font-weight: 600;
+	color: rgb(8, 54, 73)
 }
 
 aside div h4 {
@@ -590,7 +593,8 @@ iframe {
 footer {
 	margin-top: auto;
 	background-color: rgb(82, 82, 82);
-	color: rgb(150, 150, 150)
+	color: rgb(150, 150, 150);
+	padding: 0.5rem;
 }
 
 .footer-info-wrapper {
@@ -619,6 +623,10 @@ footer div h4 {
 	text-decoration: underline;
 	font-size: larger;
 	margin: 0.5rem 0.5rem 0.1rem 0.5rem;
+}
+
+footer a {
+	color: rgb(117, 117, 117);
 }
 
 .attributions {
